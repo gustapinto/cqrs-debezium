@@ -1,0 +1,113 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.16 Chrome/132.0.6834.196 Electron/34.2.0 Safari/537.36" version="26.0.16">
+  <diagram name="Página-1" id="iXBdhMipkKWt18RTb30N">
+    <mxGraphModel dx="1816" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-42" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="125" width="220" height="245" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-6" value="Command&lt;div&gt;Service&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="20" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="64oIZOmRjAoWF6rGGt8s-8" target="64oIZOmRjAoWF6rGGt8s-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-8" value="Write&lt;div&gt;Store&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="430" y="20" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-9" value="The &lt;b&gt;Write Store&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;will&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;have&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;all the domain rules&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;and restrictions of the&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;microsservice, usually it is&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;an SQL database&lt;/span&gt;&lt;/div&gt;" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="10" width="50" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="64oIZOmRjAoWF6rGGt8s-6" target="64oIZOmRjAoWF6rGGt8s-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-15" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="120" y="20" width="112" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-4" value="" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="64oIZOmRjAoWF6rGGt8s-15">
+          <mxGeometry x="16" y="16" width="96" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-3" value="" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="64oIZOmRjAoWF6rGGt8s-15">
+          <mxGeometry x="8" y="8" width="96" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-2" value="Write&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Requests&lt;/span&gt;&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="64oIZOmRjAoWF6rGGt8s-15">
+          <mxGeometry width="96" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="64oIZOmRjAoWF6rGGt8s-3" target="64oIZOmRjAoWF6rGGt8s-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-19" value="CDC Data&lt;div&gt;Connector&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="135" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="64oIZOmRjAoWF6rGGt8s-21" target="64oIZOmRjAoWF6rGGt8s-48">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460.0100000000002" y="284.9999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-21" value="Event&lt;div&gt;Broker&lt;/div&gt;" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="418.34999999999997" y="205" width="83.33" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="64oIZOmRjAoWF6rGGt8s-25" target="64oIZOmRjAoWF6rGGt8s-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-25" value="Read&lt;div&gt;Store&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="430" y="400" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="64oIZOmRjAoWF6rGGt8s-48" target="64oIZOmRjAoWF6rGGt8s-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460.0100000000002" y="364.9999999999999" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-30" value="Query&lt;div&gt;Service&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="280.01" y="400" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-32" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="120" y="400" width="112" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-33" value="" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="64oIZOmRjAoWF6rGGt8s-32">
+          <mxGeometry x="16" y="16" width="96" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-34" value="" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="64oIZOmRjAoWF6rGGt8s-32">
+          <mxGeometry x="8" y="8" width="96" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-35" value="Read&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Requests&lt;/span&gt;&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="64oIZOmRjAoWF6rGGt8s-32">
+          <mxGeometry width="96" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="64oIZOmRjAoWF6rGGt8s-19" target="64oIZOmRjAoWF6rGGt8s-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-41" value="The &lt;b&gt;Read Store&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;usually&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;have a denormalized&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;data schema, in order to&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;achieve faster read speeds&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;it is usually a NoSQL database&lt;/span&gt;&lt;/div&gt;" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="390" width="50" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-43" value="The eventually-consistent&lt;div&gt;replication of the data is&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;usually&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;done with an &lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Event Broker&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;and domain events in&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;order to&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;decouple&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;writers and&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;readers&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Its important to know that&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;this can be implemented with other&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;methods, like writing the&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;domain event&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;to the&amp;nbsp;&lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Event Broker&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;or the &lt;/span&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Read Store&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;direct&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;from the&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Command Service&lt;/b&gt;&lt;/div&gt;" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="134" width="50" height="212.5" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="64oIZOmRjAoWF6rGGt8s-45" target="64oIZOmRjAoWF6rGGt8s-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-45" value="UI" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="227.5" width="90" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="64oIZOmRjAoWF6rGGt8s-35" target="64oIZOmRjAoWF6rGGt8s-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="64oIZOmRjAoWF6rGGt8s-30" target="64oIZOmRjAoWF6rGGt8s-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-48" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355.01" y="280" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-50" value="Event&lt;div&gt;Writer&lt;br&gt;&lt;div&gt;Service&lt;/div&gt;&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="285" width="78.75" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-51" value="Data&lt;div&gt;Connector&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="300" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="64oIZOmRjAoWF6rGGt8s-52" value="Or" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="425" y="305" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
