@@ -1,0 +1,110 @@
+services:
+  db:
+    image: "postgres:17-alpine3.21"
+    container_name: "cqrs-debezium-db"
+    command:
+      - postgres
+      - -c
+      - wal_level=logical
+      - -c
+      - max_wal_senders=4
+      - -c
+      - max_replication_slots=4
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: "pg_isready -U cqrs-db-user -d cqrs-db"
+      interval: "5s"
+      timeout: "10s"
+      retries: 5
+    environment:
+      POSTGRES_PASSWORD: "cqrs-db-passw"
+      POSTGRES_USER: "cqrs-db-user"
+      POSTGRES_DB: "cqrs-db"
+
+  message-broker:
+    image: "docker.io/bitnami/kafka:3.8.1"
+    container_name: "cqrs-debezium-message-broker"
+    ports:
+      - "9094:9094"
+    volumes:
+      - "./kafka_data:/bitnami"
+      - "./:/app"
+    healthcheck:
+      test: nc -z localhost 9092 || exit -1
+      start_period: 15s
+      interval: 5s
+      timeout: 10s
+      retries: 5
+    environment:
+      KAFKA_CFG_NODE_ID: 0
+      KAFKA_CFG_PROCESS_ROLES: "controller,broker"
+      KAFKA_CFG_CONTROLLER_QUORUM_VOTERS: "0@message-broker:9093"
+      KAFKA_CFG_LISTENERS: "PLAINTEXT://:9092,CONTROLLER://:9093,EXTERNAL://0.0.0.0:9094"
+      KAFKA_CFG_ADVERTISED_LISTENERS: "PLAINTEXT://:9092,EXTERNAL://localhost:9094"
+      KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP: "CONTROLLER:PLAINTEXT,EXTERNAL:PLAINTEXT,PLAINTEXT:PLAINTEXT"
+      KAFKA_CFG_CONTROLLER_LISTENER_NAMES: "CONTROLLER"
+      KAFKA_CFG_INTER_BROKER_LISTENER_NAME: "PLAINTEXT"
+
+  message-broker-ui:
+    image: "obsidiandynamics/kafdrop:4.1.0"
+    container_name: "cqrs-debezium-message-broker-ui"
+    restart: "on-failure"
+    ports:
+      - "9000:9000"
+    depends_on:
+      - "message-broker"
+    environment:
+      KAFKA_BROKERCONNECT: "message-broker:9092"
+
+  debezium-connect:
+    image: "debezium/connect:2.4"
+    container_name: "cqrs-debezium-debezium-connect"
+    restart: "on-failure"
+    depends_on:
+      - "db"
+      - "message-broker"
+    ports:
+      - "8083:8083"
+      - "8778:8778"
+    environment:
+      BOOTSTRAP_SERVERS: "message-broker:9092"
+      GROUP_ID: 1
+      CONFIG_STORAGE_TOPIC: "connect_configs"
+      OFFSET_STORAGE_TOPIC: "connect_offsets"
+      ENABLE_DEBEZIUM_KC_REST_EXTENSION: true
+      ENABLE_DEBEZIUM_SCRIPTING: true
+      CONNECT_REST_EXTENSION_CLASSES: "io.debezium.kcrestextension.DebeziumConnectRestExtension"
+
+  debezium-ui:
+    image: "debezium/debezium-ui:2.4"
+    container_name: "cqrs-debezium-debezium-ui"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - "debezium-connect"
+    environment:
+      KAFKA_CONNECT_URIS: "http://debezium-connect:8083"
+
+  opensearch:
+    image: "opensearchproject/opensearch:2.19.1"
+    container_name: "cqrs-debezium-opensearch"
+    environment:
+      discovery.type: "single-node"
+      plugins.security.disabled: "true"
+      compatibility.override_main_response_version: "true"
+      OPENSEARCH_INITIAL_ADMIN_PASSWORD: "Opensearch-passw1"
+    ports:
+      - 9200:9200
+      - 9600:9600
+
+  opensearch-ui:
+    image: "opensearchproject/opensearch-dashboards:2.19.1"
+    container_name: "cqrs-debezium-opensearch-ui"
+    ports:
+      - 5601:5601
+    environment:
+      OPENSEARCH_HOSTS: '["http://opensearch:9200"]'
+      DISABLE_SECURITY_DASHBOARDS_PLUGIN: "true"
+    depends_on:
+      - opensearch
