@@ -13,7 +13,7 @@ public class SalesListener {
     private SalesHandler handler;
 
     @Incoming("sales-in")
-    public void listen(final SaleMessage message) {
+    public void listen(final SaleMessage message) throws Exception {
         handler.handle(message);
     }
 }

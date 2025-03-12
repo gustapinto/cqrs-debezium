@@ -10,31 +10,36 @@ public abstract class DebeziumHandler<T> {
     private final String errorFormat = "Operation not implemented in this handler [{}]";
     private final Logger logger = LoggerFactory.getLogger(DebeziumHandler.class);
 
-    protected void create(final DebeziumMessage<T> message) {
+    protected void create(final DebeziumMessage<T> message) throws Exception{
         logger.warn(errorFormat, DebeziumOperation.CREATE);
     };
 
-    protected void update(final DebeziumMessage<T> message) {
+    protected void update(final DebeziumMessage<T> message) throws Exception{
         logger.warn(errorFormat, DebeziumOperation.UPDATE);
     };
 
-    protected void delete(final DebeziumMessage<T> message) {
+    protected void delete(final DebeziumMessage<T> message) throws Exception{
         logger.warn(errorFormat, DebeziumOperation.DELETE);
     };
 
-    protected void snapshot(final DebeziumMessage<T> message) {
+    protected void snapshot(final DebeziumMessage<T> message) throws Exception{
         logger.warn(errorFormat, DebeziumOperation.SNAPSHOT);
     };
 
-    protected void truncate(final DebeziumMessage<T> message) {
+    protected void truncate(final DebeziumMessage<T> message) throws Exception{
         logger.warn(errorFormat, DebeziumOperation.TRUNCATE);
     };
 
-    protected void message(final DebeziumMessage<T> message) {
+    protected void message(final DebeziumMessage<T> message) throws Exception{
         logger.warn(errorFormat, DebeziumOperation.MESSAGE);
     };
 
-    public void handle(final DebeziumMessage<T> message) {
+    public void handle(final DebeziumMessage<T> message) throws Exception {
+        if (message == null) {
+            logger.warn("Null message discarded");
+            return;
+        }
+
         switch (message.getPayload().getOp()) {
             case CREATE -> this.create(message);
             case UPDATE -> this.update(message);
