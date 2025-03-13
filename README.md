@@ -1,6 +1,6 @@
 # CQRS Debezium
 
-A CQRS implementation using Debezium and Kafka as replication method
+A CQRS implementation using [Debezium](https://debezium.io/) and [Apache Kafka](https://kafka.apache.org/) as replication method
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gustapinto/cqrs-debezium/main/docs/images/cqrs-dark.jpg">
