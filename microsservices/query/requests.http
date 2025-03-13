@@ -1,0 +1,9 @@
+### @name GetAllSales
+GET http://localhost:3002/v1/sales
+Content-Type: application/json
+Accept: application/json
+
+### @name GetSaleByCode
+GET http://localhost:3002/v1/sales/7e9f429f-6bad-40d0-8b8e-04ba4b9d632b
+Content-Type: application/json
+Accept: application/json

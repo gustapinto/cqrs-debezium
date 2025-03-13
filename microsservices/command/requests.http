@@ -1,9 +1,10 @@
+### @name CreateSale
 POST http://localhost:3001/v1/sales
 Content-Type: application/json
 
 {
     "currency": "usd",
-    "salesperson_code": "de8ef4a9-bb13-4558-9072-0a36d6c87571",
+    "salesperson_code": "de8ef4a9-bb13-4558-9072-0a36d6c87570",
     "total_amount": "12.00",
     "discount_amount": "2.00"
 }

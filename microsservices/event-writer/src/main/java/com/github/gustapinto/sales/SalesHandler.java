@@ -45,7 +45,7 @@ final class SalesHandler extends DebeziumHandler<Sale> {
     protected void delete(final DebeziumMessage<Sale> message) throws Exception {
         final Sale sale = message.getPayload().getBefore();
 
-        client.delete(builder -> builder.index(index).id(sale.getCode()));
+        client.delete(builder -> builder.index(index).id(sale.getCode().toString()));
     }
 
     private void createIndexIfNotExists(final String index) throws IOException {
@@ -56,6 +56,6 @@ final class SalesHandler extends DebeziumHandler<Sale> {
     }
 
     private void upsertSale(final Sale sale) throws IOException {
-        client.index(builder -> builder.index(index).id(sale.getCode()).document(sale));
+        client.index(builder -> builder.index(index).id(sale.getCode().toString()).document(sale));
     }
 }
